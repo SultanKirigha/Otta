@@ -116174,6 +116174,13 @@ video {
     background-color: #2c5282;
     background-color: rgba(44, 82, 130, var(--bg-opacity));
   }
+  .search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
 
   .xl\:focus\:bg-blue-900:focus{
     --bg-opacity: 1;

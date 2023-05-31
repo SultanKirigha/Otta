@@ -1,5 +1,6 @@
 import React from "react";
-// import { div } from "@nivo/core";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
@@ -11,6 +12,7 @@ import EditNoteOutlinedIcon from '@mui/icons-material/EditNoteOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import ToggleOnOutlinedIcon from '@mui/icons-material/ToggleOnOutlined';
+import { Search } from 'react-feather';
 import "../../index.css";
 import { InputBase } from "@mui/material";
 
@@ -29,8 +31,8 @@ const Topbar = () => {
             {/* BEGIN: Search */}
                 <div class="intro-x relative mr-3 sm:mr-6">
                     <div class="search hidden sm:block">
-                        <InputBase type="text" class="search__input input placeholder-theme-13" placeholder="Search..."/>
-                        <SearchOutlinedIcon/>
+                        <input type="text" class="search__input input placeholder-theme-13" placeholder="Search..."/>
+                        <Search class="search__icon"/>
                     </div>
                     <a class="notification sm:hidden" href=""> <SearchOutlinedIcon/> </a>
                 <div class="search-result">
