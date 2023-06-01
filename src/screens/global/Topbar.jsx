@@ -1,6 +1,4 @@
 import React from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import InboxOutlinedIcon from '@mui/icons-material/InboxOutlined';
@@ -14,7 +12,6 @@ import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import ToggleOnOutlinedIcon from '@mui/icons-material/ToggleOnOutlined';
 import { Search } from 'react-feather';
 import "../../index.css";
-import { InputBase } from "@mui/material";
 
 const Topbar = () => {
     return (
@@ -24,7 +21,7 @@ const Topbar = () => {
             {/* BEGIN: Breadcrumb */}
             <div class="-intro-x breadcrumb mr-auto hidden sm:flex"> 
                 <a href="" class="">Application</a> 
-                    <ChevronRightOutlinedIcon/> 
+                    <ChevronRightOutlinedIcon class="breadcrumb__icon"/> 
                 <a href="" class="breadcrumb--active">Dashboard</a> 
             </div>
             {/* END: Breadcrumb */}
@@ -118,7 +115,7 @@ const Topbar = () => {
             {/* END: Search */}
             {/* BEGIN: Notifications */}
             <div class="intro-x dropdown relative mr-auto sm:mr-6">
-                <div class="dropdown-toggle notification notification--bullet cursor-pointer"> <NotificationsOutlinedIcon/></div>
+                <div class="dropdown-toggle notification notification--bullet cursor-pointer"> <NotificationsOutlinedIcon class="notification__icon"/></div>
                 <div class="notification-content dropdown-box mt-8 absolute top-0 left-0 sm:left-auto sm:right-0 z-20 -ml-10 sm:ml-0">
                     <div class="notification-content__box dropdown-box__content box">
                         <div class="notification-content__title">Notifications</div>
@@ -203,13 +200,13 @@ const Topbar = () => {
                             <div class="text-xs text-theme-41">Software Engineer</div>
                         </div>
                         <div class="p-2">
-                            <a href="personal-profile.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <PeopleOutlineOutlinedIcon/> Profile </a>
-                            <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <EditNoteOutlinedIcon/> Add Account </a>
-                            <a href="change-password.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <LockOutlinedIcon/> Reset Password </a>
-                            <a href="chat.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <HelpOutlineOutlinedIcon/> Help </a>
+                            <a href="personal-profile.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <PersonOutlineOutlinedIcon className="w-4 h-4 mr-2"/> Profile </a>
+                            <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <EditNoteOutlinedIcon className="w-4 h-4 mr-2"/> Add Account </a>
+                            <a href="change-password.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <LockOutlinedIcon className="w-4 h-4 mr-2"/> Reset Password </a>
+                            <a href="chat.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <HelpOutlineOutlinedIcon className="w-4 h-4 mr-2"/> Help </a>
                         </div>
                         <div class="p-2 border-t border-theme-40">
-                            <a href="login-login.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <ToggleOnOutlinedIcon/> Logout </a>
+                            <a href="login-login.html" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <ToggleOnOutlinedIcon className="w-4 h-4 mr-2"/> Logout </a>
                         </div>
                     </div>
                 </div>
