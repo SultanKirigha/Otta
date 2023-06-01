@@ -1,4 +1,5 @@
 import React from "react";
+import { Calendar, CheckSquare, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, ChevronsRight, CreditCard, FileText, MapPin, Monitor, Plus, RefreshCcw, ShoppingCart, Trash2, User } from "react-feather/dist";
 
 const Dashboard = () => {
     return (
@@ -10,16 +11,16 @@ const Dashboard = () => {
                 <h2 class="text-lg font-medium truncate mr-5">
                     General Report
                 </h2>
-                <a href="" class="ml-auto flex text-theme-1"> <i data-feather="refresh-ccw" class="w-4 h-4 mr-3"></i> Reload Data </a>
+                <a href="" class="ml-auto flex text-theme-1"> <RefreshCcw class="w-4 h-4 mr-3"/> Reload Data </a> 
             </div>
             <div class="grid grid-cols-12 gap-6 mt-5">
                 <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
                     <div class="report-box zoom-in">
                         <div class="box p-5">
                             <div class="flex">
-                                <i data-feather="shopping-cart" class="report-box__icon text-theme-10"></i>
+                                <ShoppingCart class="report-box__icon text-theme-10"/>
                                 <div class="ml-auto">
-                                    <div class="report-box__indicator bg-theme-9 tooltip cursor-pointer" title="33% Higher than last month"> 33% <i data-feather="chevron-up" class="w-4 h-4"></i> </div>
+                                    <div class="report-box__indicator bg-theme-9 tooltip cursor-pointer" title="33% Higher than last month"> 33% <ChevronUp class="w-4 h-4"/> </div> 
                                 </div>
                             </div>
                             <div class="text-3xl font-bold leading-8 mt-6">4.510</div>
@@ -31,9 +32,9 @@ const Dashboard = () => {
                     <div class="report-box zoom-in">
                         <div class="box p-5">
                             <div class="flex">
-                                <i data-feather="credit-card" class="report-box__icon text-theme-11"></i>
+                                <CreditCard class="report-box__icon text-theme-11"/>
                                 <div class="ml-auto">
-                                    <div class="report-box__indicator bg-theme-6 tooltip cursor-pointer" title="2% Lower than last month"> 2% <i data-feather="chevron-down" class="w-4 h-4"></i> </div>
+                                    <div class="report-box__indicator bg-theme-6 tooltip cursor-pointer" title="2% Lower than last month"> 2% <ChevronDown class="w-4 h-4"/> </div>
                                 </div>
                             </div>
                             <div class="text-3xl font-bold leading-8 mt-6">3.521</div>
@@ -45,9 +46,9 @@ const Dashboard = () => {
                     <div class="report-box zoom-in">
                         <div class="box p-5">
                             <div class="flex">
-                                <i data-feather="monitor" class="report-box__icon text-theme-12"></i>
+                                <Monitor class="report-box__icon text-theme-12"/>
                                 <div class="ml-auto">
-                                    <div class="report-box__indicator bg-theme-9 tooltip cursor-pointer" title="12% Higher than last month"> 12% <i data-feather="chevron-up" class="w-4 h-4"></i> </div>
+                                    <div class="report-box__indicator bg-theme-9 tooltip cursor-pointer" title="12% Higher than last month"> 12% <ChevronUp class="w-4 h-4"/> </div>
                                 </div>
                             </div>
                             <div class="text-3xl font-bold leading-8 mt-6">2.145</div>
@@ -59,9 +60,9 @@ const Dashboard = () => {
                     <div class="report-box zoom-in">
                         <div class="box p-5">
                             <div class="flex">
-                                <i data-feather="user" class="report-box__icon text-theme-9"></i>
+                                    <User class="report-box__icon text-theme-9"/>
                                 <div class="ml-auto">
-                                    <div class="report-box__indicator bg-theme-9 tooltip cursor-pointer" title="22% Higher than last month"> 22% <i data-feather="chevron-up" class="w-4 h-4"></i> </div>
+                                    <div class="report-box__indicator bg-theme-9 tooltip cursor-pointer" title="22% Higher than last month"> 22% <ChevronUp class="w-4 h-4"/> </div> 
                                 </div>
                             </div>
                             <div class="text-3xl font-bold leading-8 mt-6">152.000</div>
@@ -79,7 +80,7 @@ const Dashboard = () => {
                     Sales Report
                 </h2>
                 <div class="sm:ml-auto mt-3 sm:mt-0 relative text-gray-700">
-                    <i data-feather="calendar" class="w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"></i>
+                    <Calendar class="w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"/>
                     <input type="text" data-daterange="true" class="datepicker input w-full sm:w-56 box pl-10"/>
                 </div>
             </div>
@@ -97,7 +98,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                     <div class="dropdown relative xl:ml-auto mt-5 xl:mt-0">
-                        <button class="dropdown-toggle button font-normal border text-white relative flex items-center text-gray-700"> Filter by Category <i data-feather="chevron-down" class="w-4 h-4 ml-2"></i> </button>
+                        <button class="dropdown-toggle button font-normal border text-white relative flex items-center text-gray-700"> Filter by Category <ChevronDown class="w-4 h-4 ml-2"/> </button>
                         <div class="dropdown-box mt-10 absolute w-40 top-0 xl:right-0 z-20">
                             <div class="dropdown-box__content box p-2 overflow-y-auto h-32"> <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">PC & Laptop</a> <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Smartphone</a> <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Electronic</a> <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Photography</a> <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md">Sport</a> </div>
                         </div>
@@ -182,7 +183,7 @@ const Dashboard = () => {
                     Official Store
                 </h2>
                 <div class="sm:ml-auto mt-3 sm:mt-0 relative text-gray-700">
-                    <i data-feather="map-pin" class="w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"></i>
+                    <MapPin class="w-4 h-4 z-10 absolute my-auto inset-y-0 ml-3 left-0"/>
                     <input type="text" class="input w-full sm:w-40 box pl-10" placeholder="Filter by city"/>
                 </div>
             </div>
@@ -313,8 +314,8 @@ const Dashboard = () => {
                     Weekly Top Seller
                 </h2>
                 <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
-                    <button class="button box flex items-center text-gray-700"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to Excel </button>
-                    <button class="ml-3 button box flex items-center text-gray-700"> <i data-feather="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to PDF </button>
+                    <button class="button box flex items-center text-gray-700"> <FileText class="hidden sm:block w-4 h-4 mr-2"/> Export to Excel </button>
+                    <button class="ml-3 button box flex items-center text-gray-700"> <FileText class="hidden sm:block w-4 h-4 mr-2"/> Export to PDF </button>
                 </div>
             </div>
             <div class="intro-y overflow-auto lg:overflow-visible mt-8 sm:mt-0">
@@ -349,12 +350,12 @@ const Dashboard = () => {
                             </td>
                             <td class="text-center">77</td>
                             <td class="w-40">
-                                <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                <div class="flex items-center justify-center text-theme-9"> <CheckSquare class="w-4 h-4 mr-2"/> Active </div>
                             </td>
                             <td class="table-report__action w-56">
                                 <div class="flex justify-center items-center">
-                                    <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center mr-3" href=""> <CheckSquare class="w-4 h-4 mr-1"/> Edit </a>
+                                    <a class="flex items-center text-theme-6" href=""> <Trash2 class="w-4 h-4 mr-1"/> Delete </a>
                                 </div>
                             </td>
                         </tr>
@@ -378,12 +379,12 @@ const Dashboard = () => {
                             </td>
                             <td class="text-center">100</td>
                             <td class="w-40">
-                                <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                <div class="flex items-center justify-center text-theme-9"> <CheckSquare class="w-4 h-4 mr-2"/> Active </div>
                             </td>
                             <td class="table-report__action w-56">
                                 <div class="flex justify-center items-center">
-                                    <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center mr-3" href=""> <CheckSquare class="w-4 h-4 mr-1"/> Edit </a>
+                                    <a class="flex items-center text-theme-6" href=""> <Trash2 class="w-4 h-4 mr-1"/> Delete </a>
                                 </div>
                             </td>
                         </tr>
@@ -407,12 +408,12 @@ const Dashboard = () => {
                             </td>
                             <td class="text-center">50</td>
                             <td class="w-40">
-                                <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                <div class="flex items-center justify-center text-theme-9"> <CheckSquare class="w-4 h-4 mr-2"/> Active </div>
                             </td>
                             <td class="table-report__action w-56">
                                 <div class="flex justify-center items-center">
-                                    <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center mr-3" href=""> <CheckSquare class="w-4 h-4 mr-1"/> Edit </a>
+                                    <a class="flex items-center text-theme-6" href=""> <Trash2 class="w-4 h-4 mr-1"/> Delete </a>
                                 </div>
                             </td>
                         </tr>
@@ -436,12 +437,12 @@ const Dashboard = () => {
                             </td>
                             <td class="text-center">50</td>
                             <td class="w-40">
-                                <div class="flex items-center justify-center text-theme-9"> <i data-feather="check-square" class="w-4 h-4 mr-2"></i> Active </div>
+                                <div class="flex items-center justify-center text-theme-9"> <CheckSquare class="w-4 h-4 mr-2"/> Active </div>
                             </td>
                             <td class="table-report__action w-56">
                                 <div class="flex justify-center items-center">
-                                    <a class="flex items-center mr-3" href=""> <i data-feather="check-square" class="w-4 h-4 mr-1"></i> Edit </a>
-                                    <a class="flex items-center text-theme-6" href=""> <i data-feather="trash-2" class="w-4 h-4 mr-1"></i> Delete </a>
+                                    <a class="flex items-center mr-3" href=""> <CheckSquare class="w-4 h-4 mr-1"/> Edit </a>
+                                    <a class="flex items-center text-theme-6" href=""> <Trash2 class="w-4 h-4 mr-1"/> Delete </a>
                                 </div>
                             </td>
                         </tr>
@@ -451,10 +452,10 @@ const Dashboard = () => {
             <div class="intro-y flex flex-wrap sm:flex-row sm:flex-no-wrap items-center mt-3">
                 <ul class="pagination">
                     <li>
-                        <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevrons-left"></i> </a>
+                        <a class="pagination__link" href=""> <ChevronLeft class="w-4 h-4" /> </a>
                     </li>
                     <li>
-                        <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevron-left"></i> </a>
+                        <a class="pagination__link" href=""> <ChevronLeft class="w-4 h-4"/> </a>
                     </li>
                     <li> <a class="pagination__link" href="">...</a> </li>
                     <li> <a class="pagination__link" href="">1</a> </li>
@@ -462,10 +463,10 @@ const Dashboard = () => {
                     <li> <a class="pagination__link" href="">3</a> </li>
                     <li> <a class="pagination__link" href="">...</a> </li>
                     <li>
-                        <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevron-right"></i> </a>
+                        <a class="pagination__link" href=""> <ChevronRight class="w-4 h-4"/> </a>
                     </li>
                     <li>
-                        <a class="pagination__link" href=""> <i class="w-4 h-4" data-feather="chevrons-right"></i> </a>
+                        <a class="pagination__link" href=""> <ChevronsRight class="w-4 h-4"/> </a>
                     </li>
                 </ul>
                 <select class="w-20 input box mt-3 sm:mt-0">
@@ -640,8 +641,8 @@ const Dashboard = () => {
                     <h2 class="text-lg font-medium truncate mr-auto">
                         Important Notes
                     </h2>
-                    <button data-carousel="important-notes" data-target="prev" class="slick-navigator button px-2 border border-gray-400 flex items-center text-gray-700 mr-2"> <i data-feather="chevron-left" class="w-4 h-4"></i> </button>
-                    <button data-carousel="important-notes" data-target="next" class="slick-navigator button px-2 border border-gray-400 flex items-center text-gray-700"> <i data-feather="chevron-right" class="w-4 h-4"></i> </button>
+                    <button data-carousel="important-notes" data-target="prev" class="slick-navigator button px-2 border border-gray-400 flex items-center text-gray-700 mr-2"> <ChevronRight class="w-4 h-4"/> </button>
+                    <button data-carousel="important-notes" data-target="next" class="slick-navigator button px-2 border border-gray-400 flex items-center text-gray-700"> <ChevronRight class="w-4 h-4"/> </button>
                 </div>
                 <div class="mt-5 intro-x">
                     <div class="slick-carousel box zoom-in" id="important-notes">
@@ -682,15 +683,15 @@ const Dashboard = () => {
                     <h2 class="text-lg font-medium truncate mr-5">
                         Schedules
                     </h2>
-                    <a href="" class="ml-auto text-theme-1 truncate flex items-center"> <i data-feather="plus" class="w-4 h-4 mr-1"></i> Add New Schedules </a>
+                    <a href="" class="ml-auto text-theme-1 truncate flex items-center"> <Plus class="w-4 h-4 mr-1"/> Add New Schedules </a>
                 </div>
                 <div class="mt-5">
                     <div class="intro-x box">
                         <div class="p-5">
                             <div class="flex">
-                                <i data-feather="chevron-left" class="w-5 h-5 text-gray-600"></i>
+                                <ChevronRight class="w-5 h-5 text-gray-600"/>
                                 <div class="font-medium mx-auto">April</div>
-                                <i data-feather="chevron-right" class="w-5 h-5 text-gray-600"></i>
+                                <ChevronRight class="w-5 h-5 text-gray-600"/>
                             </div>
                             <div class="grid grid-cols-7 gap-4 mt-5 text-center">
                                 <div class="font-medium">Su</div>
