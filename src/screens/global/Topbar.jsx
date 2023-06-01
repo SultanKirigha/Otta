@@ -12,6 +12,7 @@ import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import ToggleOnOutlinedIcon from '@mui/icons-material/ToggleOnOutlined';
 import { Search } from 'react-feather';
 import "../../index.css";
+import Dashboard from "../dashboard";
 
 const Topbar = () => {
     return (
@@ -214,6 +215,7 @@ const Topbar = () => {
             {/* END: Account Menu */}
         </div>
         {/* END: Top Bar */}
+        <Dashboard/>
     </div>
     )
 }
