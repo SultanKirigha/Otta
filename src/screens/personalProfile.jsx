@@ -1,5 +1,5 @@
 import React from "react";
-import { User, Activity, Book, Box, Briefcase, Calendar, Coffee, Edit, Eye, Facebook, FileText, Instagram, Layout, Linkedin, Mail, MoreHorizontal, Pocket, Share2, Sidebar, Trash2, Twitter, UserPlus, XCircle, X, Home, Users, Inbox, List, Send, MessageCircle } from "react-feather";
+import { User, Activity, Book, Box, Briefcase, Calendar, Coffee, Edit, Eye, Facebook, FileText, Instagram, Layout, Linkedin, Mail, MoreHorizontal, Pocket, Share2, Sidebar, Trash2, Twitter, UserPlus, XCircle, X, Home, Users, Inbox, List, Send, MessageCircle, BarChart2 } from "react-feather";
  const PersonalProfile = () => {
 return (
     // BEGIN: Mobile Menu 
@@ -8,7 +8,7 @@ return (
             <a href="" className="flex mr-auto">
                 <img alt="Midone Tailwind HTML Admin Template" className="w-6" src="dist/images/logo.svg"/>
             </a>
-            <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" className="w-8 h-8 text-white transform -rotate-90"/> </a>
+            <a href="javascript:;" id="mobile-menu-toggler"> <BarChart2 className="w-8 h-8 text-white transform -rotate-90"/> </a>
         </div>
         <ul className="border-t border-theme-24 py-5 hidden">
             <li>

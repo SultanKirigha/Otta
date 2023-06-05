@@ -8,7 +8,7 @@ import PersonalProfile from "./screens/personalProfile";
 import CompanyProfile from "./screens/companyProfile";
 import InboxPage from "./screens/inbox";
 // import Jobs from "./screens/jobs";
-// import ViewTalent from "./screens/viewTalent";
+import ViewTalent from "./screens/viewTalent";
 // import DataList from "./screens/dataList";
 // import Chats from "./screens/chats";
 // import ChangePassword from "./screens/changePassword";
@@ -34,7 +34,7 @@ function App() {
                 <Route path="/companyProfile" element={<CompanyProfile/>}/>
                 <Route path="/inbox" element={<InboxPage/>}/>
                 {/* <Route path="/jobs" element={<Jobs/>}/> */}
-                {/* <Route path="/viewTalent" element={<ViewTalent/>}/> */}
+                <Route path="/viewTalent" element={<ViewTalent/>}/>
                 {/* <Route path="/dataList" element={<DataList/>}/> */}
                 {/* <Route path="/chats" element={<Chats/>}/> */}
                 {/* <Route path="/changePassword" element={<ChangePassword/>}/> */}
