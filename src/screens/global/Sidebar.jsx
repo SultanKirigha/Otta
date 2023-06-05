@@ -3,69 +3,69 @@ import "../../../src";
 import { Briefcase, File, Home, Inbox, List, MessageCircle, Send, User, Users } from "react-feather";
 const Sidebar = () => {
     return (
-    <div class="flex">
+    <div className="flex">
         {/* BEGIN: Side Menu */}
-        <nav class="side-nav">
-            <a href="" class="intro-x flex items-center pl-5 pt-4">
-                <img alt="Midone Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg"/>
-                <span class="hidden xl:block text-white text-lg ml-3">onthe<span class="font-medium"> table</span> </span>
+        <nav className="side-nav">
+            <a href="" className="intro-x flex items-center pl-5 pt-4">
+                <img alt="Midone Tailwind HTML Admin Template" className="w-6" src="dist/images/logo.svg"/>
+                <span className="hidden xl:block text-white text-lg ml-3">onthe<span className="font-medium"> table</span> </span>
             </a>
-            <div class="side-nav__devider my-6"></div>
+            <div className="side-nav__devider my-6"></div>
             <ul>
                 <li>
-                    <a href="index.html" class="side-menu side-menu--active">
-                        <div class="side-menu__icon"> <Home/> </div>
-                        <div class="side-menu__title"> Overview </div>
+                    <a href="/" className="side-menu side-menu--active">
+                        <div className="side-menu__icon"> <Home/> </div>
+                        <div className="side-menu__title"> Overview </div>
                     </a>
                 </li>
                 <li>
-                    <a href="personal-profile.html" class="side-menu">
-                        <div class="side-menu__icon"><User/> </div>
-                        <div class="side-menu__title"> Personal Profile </div>
+                    <a href="/personalProfile" className="side-menu">
+                        <div className="side-menu__icon"><User/> </div>
+                        <div className="side-menu__title"> Personal Profile </div>
                     </a>
                 </li>
                 <li>
-                    <a href="company-profile.html" class="side-menu">
-                        <div class="side-menu__icon"> <Users/> </div>
-                        <div class="side-menu__title"> Company Profile </div>
+                    <a href="/companyProfile" className="side-menu">
+                        <div className="side-menu__icon"> <Users/> </div>
+                        <div className="side-menu__title"> Company Profile </div>
                     </a>
                 </li>
-                <li class="side-nav__devider my-6"></li>
+                <li className="side-nav__devider my-6"></li>
                 <li>
-                    <a href="inbox.html" class="side-menu">
-                        <div class="side-menu__icon"> <Inbox/> </div>
-                        <div class="side-menu__title"> Inbox </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="side-menu">
-                        <div class="side-menu__icon"> <Briefcase/> </div>
-                        <div class="side-menu__title"> Jobs </div>
+                    <a href="/inbox" className="side-menu">
+                        <div className="side-menu__icon"> <Inbox/> </div>
+                        <div className="side-menu__title"> Inbox </div>
                     </a>
                 </li>
                 <li>
-                    <a href="view-talent.html" class="side-menu">
-                        <div class="side-menu__icon"> <File/> </div>
-                        <div class="side-menu__title"> View Talent </div>
+                    <a href="#" className="side-menu">
+                        <div className="side-menu__icon"> <Briefcase/> </div>
+                        <div className="side-menu__title"> Jobs </div>
                     </a>
                 </li>
                 <li>
-                    <a href="data-list.html" class="side-menu">
-                        <div class="side-menu__icon"> <List/> </div>
-                        <div class="side-menu__title"> Data List </div>
+                    <a href="/viewTalent" className="side-menu">
+                        <div className="side-menu__icon"> <File/> </div>
+                        <div className="side-menu__title"> View Talent </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="side-menu">
-                        <div class="side-menu__icon"> <Send/> </div>
-                        <div class="side-menu__title"> Recommend / Invite </div>
+                    <a href="/dataList" className="side-menu">
+                        <div className="side-menu__icon"> <List/> </div>
+                        <div className="side-menu__title"> Data List </div>
                     </a>
                 </li>
-                <li class="side-nav__devider my-6"></li>
                 <li>
-                    <a href="chat.html" class="side-menu">
-                        <div class="side-menu__icon"> <MessageCircle/> </div>
-                        <div class="side-menu__title"> Chat </div>
+                    <a href="#" className="side-menu">
+                        <div className="side-menu__icon"> <Send/> </div>
+                        <div className="side-menu__title"> Recommend / Invite </div>
+                    </a>
+                </li>
+                <li className="side-nav__devider my-6"></li>
+                <li>
+                    <a href="/chat" className="side-menu">
+                        <div className="side-menu__icon"> <MessageCircle/> </div>
+                        <div className="side-menu__title"> Chat </div>
                     </a>
                 </li>
             </ul>
