@@ -9,7 +9,7 @@ import CompanyProfile from "./screens/companyProfile";
 import InboxPage from "./screens/inbox";
 // import Jobs from "./screens/jobs";
 import ViewTalent from "./screens/viewTalent";
-// import DataList from "./screens/dataList";
+import DataList from "./screens/dataList";
 // import Chats from "./screens/chats";
 // import ChangePassword from "./screens/changePassword";
 // import Login from "./screens/login";
@@ -35,7 +35,7 @@ function App() {
                 <Route path="/inbox" element={<InboxPage/>}/>
                 {/* <Route path="/jobs" element={<Jobs/>}/> */}
                 <Route path="/viewTalent" element={<ViewTalent/>}/>
-                {/* <Route path="/dataList" element={<DataList/>}/> */}
+                <Route path="/dataList" element={<DataList/>}/>
                 {/* <Route path="/chats" element={<Chats/>}/> */}
                 {/* <Route path="/changePassword" element={<ChangePassword/>}/> */}
                 {/* <Route path="/login" element={<Login/>}/> */}
