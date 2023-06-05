@@ -6,7 +6,7 @@ import {Routes, Route} from "react-router-dom";
 import Dashboard from "./screens/dashboard";
 import PersonalProfile from "./screens/personalProfile";
 import CompanyProfile from "./screens/companyProfile";
-// import Inbox from "./screens/inbox";
+import InboxPage from "./screens/inbox";
 // import Jobs from "./screens/jobs";
 // import ViewTalent from "./screens/viewTalent";
 // import DataList from "./screens/dataList";
@@ -32,7 +32,7 @@ function App() {
                 <Route path="/" element={<Dashboard/>}/>
                 <Route path="/personalProfile" element={<PersonalProfile/>}/>
                 <Route path="/companyProfile" element={<CompanyProfile/>}/>
-                {/* <Route path="/inbox" element={<Inbox/>}/> */}
+                <Route path="/inbox" element={<InboxPage/>}/>
                 {/* <Route path="/jobs" element={<Jobs/>}/> */}
                 {/* <Route path="/viewTalent" element={<ViewTalent/>}/> */}
                 {/* <Route path="/dataList" element={<DataList/>}/> */}
