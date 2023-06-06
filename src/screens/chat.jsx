@@ -1,4 +1,5 @@
 import React from "react";
+import { BarChart2, Briefcase, Clock, Copy, CornerUpLeft, FileText, Globe, Home, Inbox, List, Mail, MessageCircle, Mic, MoreHorizontal, MoreVertical, Paperclip, Plus, Search, Send, Settings, Share2, Smile, Trash, User, UserPlus, Users } from "react-feather";
 const Chat = () => {
 return (
 
@@ -82,12 +83,12 @@ return (
                         <button class="button text-white bg-theme-1 shadow-md mr-2">Start New Chat</button>
                         <div class="dropdown relative ml-auto sm:ml-0">
                             <button class="dropdown-toggle button px-2 box text-gray-700">
-                                <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-feather="plus"></i> </span>
+                                <span class="w-5 h-5 flex items-center justify-center"> <Plus class="w-4 h-4"/> </span>
                             </button>
                             <div class="dropdown-box mt-10 absolute w-40 top-0 right-0 z-20">
                                 <div class="dropdown-box__content box p-2">
-                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="users" class="w-4 h-4 mr-2"></i> Create Group </a>
-                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="settings" class="w-4 h-4 mr-2"></i> Settings </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Users class="w-4 h-4 mr-2"/> Create Group </a>
+                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Settings class="w-4 h-4 mr-2"/> Settings </a>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +108,7 @@ return (
                                     <div class="box px-5 pt-5 pb-5 lg:pb-0 mt-5">
                                         <div class="relative text-gray-700">
                                             <input type="text" class="input input--lg w-full bg-gray-200 pr-10 placeholder-theme-13" placeholder="Search for messages or users..."/>
-                                            <i class="w-4 h-4 hidden sm:absolute my-auto inset-y-0 mr-3 right-0" data-feather="search"></i> 
+                                            <Search class="w-4 h-4 hidden sm:absolute my-auto inset-y-0 mr-3 right-0"/> 
                                         </div>
                                         <div class="overflow-x-auto scrollbar-hidden">
                                             <div class="flex mt-5">
@@ -330,7 +331,7 @@ return (
                                     <div class="box p-5 mt-5">
                                         <div class="relative text-gray-700">
                                             <input type="text" class="input input--lg w-full bg-gray-200 pr-10 placeholder-theme-13" placeholder="Search for messages or users..."/>
-                                            <i class="w-4 h-4 hidden sm:absolute my-auto inset-y-0 mr-3 right-0" data-feather="search"></i> 
+                                            <Search class="w-4 h-4 hidden sm:absolute my-auto inset-y-0 mr-3 right-0"/> 
                                         </div>
                                         <button type="button" class="button w-full bg-theme-1 text-white mt-3">Invite Friends</button>
                                     </div>
@@ -347,11 +348,11 @@ return (
                                             <div class="w-full truncate text-gray-600">Last seen 2 hours ago</div>
                                         </div>
                                         <div class="dropdown relative ml-auto">
-                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <MoreHorizontal class="w-5 h-5 text-gray-700"/> </a>
                                             <div class="dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Contact </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="copy" class="w-4 h-4 mr-2"></i> Copy Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Share2 class="w-4 h-4 mr-2"/> Share Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Copy class="w-4 h-4 mr-2"/> Copy Contact </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -366,11 +367,11 @@ return (
                                             <div class="w-full truncate text-gray-600">Last seen 2 hours ago</div>
                                         </div>
                                         <div class="dropdown relative ml-auto">
-                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <MoreHorizontal class="w-5 h-5 text-gray-700"/> </a>
                                             <div class="dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Contact </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="copy" class="w-4 h-4 mr-2"></i> Copy Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Share2 class="w-4 h-4 mr-2"/> Share Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Copy class="w-4 h-4 mr-2"/> Copy Contact </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -386,11 +387,11 @@ return (
                                             <div class="w-full truncate text-gray-600">Last seen 2 hours ago</div>
                                         </div>
                                         <div class="dropdown relative ml-auto">
-                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <MoreHorizontal class="w-5 h-5 text-gray-700"/> </a>
                                             <div class="dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Contact </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="copy" class="w-4 h-4 mr-2"></i> Copy Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Share2 class="w-4 h-4 mr-2"/> Share Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Copy class="w-4 h-4 mr-2"/> Copy Contact </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -405,11 +406,11 @@ return (
                                             <div class="w-full truncate text-gray-600">Last seen 2 hours ago</div>
                                         </div>
                                         <div class="dropdown relative ml-auto">
-                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <MoreHorizontal class="w-5 h-5 text-gray-700"/> </a>
                                             <div class="dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Contact </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="copy" class="w-4 h-4 mr-2"></i> Copy Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Share2 class="w-4 h-4 mr-2"/> Share Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Copy class="w-4 h-4 mr-2"/> Copy Contact </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -424,11 +425,11 @@ return (
                                             <div class="w-full truncate text-gray-600">Last seen 2 hours ago</div>
                                         </div>
                                         <div class="dropdown relative ml-auto">
-                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <i data-feather="more-horizontal" class="w-5 h-5 text-gray-700"></i> </a>
+                                            <a class="dropdown-toggle w-5 h-5 block" href="javascript:;"> <MoreHorizontal class="w-5 h-5 text-gray-700"/> </a>
                                             <div class="dropdown-box mt-5 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Contact </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="copy" class="w-4 h-4 mr-2"></i> Copy Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Share2 class="w-4 h-4 mr-2"/> Share Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Copy class="w-4 h-4 mr-2"/> Copy Contact </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -452,28 +453,28 @@ return (
                                                 <div class="text-gray-600">Country</div>
                                                 <div>New York City, USA</div>
                                             </div>
-                                            <i data-feather="globe" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                            <Globe class="w-4 h-4 text-gray-600 ml-auto"/> 
                                         </div>
                                         <div class="flex items-center border-b py-5">
                                             <div class="">
                                                 <div class="text-gray-600">Phone</div>
                                                 <div>+32 19 23 62 24 34</div>
                                             </div>
-                                            <i data-feather="mic" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                            <Mic class="w-4 h-4 text-gray-600 ml-auto"/> 
                                         </div>
                                         <div class="flex items-center border-b py-5">
                                             <div class="">
                                                 <div class="text-gray-600">Email</div>
                                                 <div>john travolta</div>
                                             </div>
-                                            <i data-feather="mail" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                            <Mail class="w-4 h-4 text-gray-600 ml-auto"/> 
                                         </div>
                                         <div class="flex items-center pt-5">
                                             <div class="">
                                                 <div class="text-gray-600">Joined Date</div>
                                                 <div>19 August 2022</div>
                                             </div>
-                                            <i data-feather="clock" class="w-4 h-4 text-gray-600 ml-auto"></i> 
+                                            <Clock class="w-4 h-4 text-gray-600 ml-auto"/> 
                                         </div>
                                     </div>
                                 </div>
@@ -497,14 +498,14 @@ return (
                                         </div>
                                     </div>
                                     <div class="flex items-center sm:ml-auto mt-5 sm:mt-0 border-t sm:border-0 border-gray-200 pt-3 sm:pt-0 -mx-5 sm:mx-0 px-5 sm:px-0">
-                                        <a href="javascript:;" class="w-5 h-5 text-gray-500"> <i data-feather="search" class="w-5 h-5"></i> </a>
-                                        <a href="javascript:;" class="w-5 h-5 text-gray-500 ml-5"> <i data-feather="user-plus" class="w-5 h-5"></i> </a>
+                                        <a href="javascript:;" class="w-5 h-5 text-gray-500"> <i class="w-5 h-5"/> </a>
+                                        <a href="javascript:;" class="w-5 h-5 text-gray-500 ml-5"> <UserPlus class="w-5 h-5"/> </a>
                                         <div class="dropdown relative ml-auto sm:ml-3">
-                                            <a href="javascript:;" class="dropdown-toggle w-5 h-5 text-gray-500"> <i data-feather="more-vertical" class="w-5 h-5"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-5 h-5 text-gray-500"> <MoreVertical class="w-5 h-5"/> </a>
                                             <div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="share-2" class="w-4 h-4 mr-2"></i> Share Contact </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="settings" class="w-4 h-4 mr-2"></i> Settings </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Share2 class="w-4 h-4 mr-2"/> Share Contact </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Settings class="w-4 h-4 mr-2"/> Settings </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -520,11 +521,11 @@ return (
                                             <div class="mt-1 text-xs text-gray-600">2 mins ago</div>
                                         </div>
                                         <div class="hidden sm:block dropdown relative ml-3 my-auto">
-                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <i data-feather="more-vertical" class="w-4 h-4"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <MoreVertical class="w-4 h-4"/> </a>
                                             <div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="corner-up-left" class="w-4 h-4 mr-2"></i> Reply </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <CornerUpLeft class="w-4 h-4 mr-2"/> Reply </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Trash class="w-4 h-4 mr-2"/> Delete </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -532,11 +533,11 @@ return (
                                     <div class="clear-both"></div>
                                     <div class="chat__box__text-box flex items-end float-right mb-4">
                                         <div class="hidden sm:block dropdown relative mr-3 my-auto">
-                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <i data-feather="more-vertical" class="w-4 h-4"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <MoreVertical class="w-4 h-4"/> </a>
                                             <div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="corner-up-left" class="w-4 h-4 mr-2"></i> Reply </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <CornerUpLeft class="w-4 h-4 mr-2"/> Reply </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Trash class="w-4 h-4 mr-2"/> Delete </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -551,11 +552,11 @@ return (
                                     <div class="clear-both"></div>
                                     <div class="chat__box__text-box flex items-end float-right mb-4">
                                         <div class="hidden sm:block dropdown relative mr-3 my-auto">
-                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <i data-feather="more-vertical" class="w-4 h-4"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <MoreVertical class="w-4 h-4"/> </a>
                                             <div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="corner-up-left" class="w-4 h-4 mr-2"></i> Reply </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <CornerUpLeft class="w-4 h-4 mr-2"/> Reply </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Trash class="w-4 h-4 mr-2"/> Delete </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -578,11 +579,11 @@ return (
                                             <div class="mt-1 text-xs text-gray-600">10 secs ago</div>
                                         </div>
                                         <div class="hidden sm:block dropdown relative ml-3 my-auto">
-                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <i data-feather="more-vertical" class="w-4 h-4"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <MoreVertical class="w-4 h-4"/> </a>
                                             <div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="corner-up-left" class="w-4 h-4 mr-2"></i> Reply </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <CornerUpLeft class="w-4 h-4 mr-2"/> Reply </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Trash class="w-4 h-4 mr-2"/> Delete </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -590,11 +591,11 @@ return (
                                     <div class="clear-both"></div>
                                     <div class="chat__box__text-box flex items-end float-right mb-4">
                                         <div class="hidden sm:block dropdown relative mr-3 my-auto">
-                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <i data-feather="more-vertical" class="w-4 h-4"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 text-gray-500"> <MoreVertical class="w-4 h-4"/> </a>
                                             <div class="dropdown-box mt-6 absolute w-40 top-0 right-0 z-20">
                                                 <div class="dropdown-box__content box p-2">
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="corner-up-left" class="w-4 h-4 mr-2"></i> Reply </a>
-                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <i data-feather="trash" class="w-4 h-4 mr-2"></i> Delete </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <CornerUpLeft class="w-4 h-4 mr-2"/> Reply </a>
+                                                    <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white hover:bg-gray-200 rounded-md"> <Trash class="w-4 h-4 mr-2"/> Delete </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -621,14 +622,14 @@ return (
                                     <textarea class="chat__box__input input w-full h-16 resize-none border-transparent px-5 py-3 focus:shadow-none" rows="1" placeholder="Type your message..."></textarea>
                                     <div class="flex absolute sm:static left-0 bottom-0 ml-5 sm:ml-0 mb-5 sm:mb-0">
                                         <div class="dropdown relative mr-3 sm:mr-5">
-                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 sm:w-5 sm:h-5 block text-gray-500"> <i data-feather="smile" class="w-full h-full"></i> </a>
+                                            <a href="javascript:;" class="dropdown-toggle w-4 h-4 sm:w-5 sm:h-5 block text-gray-500"> <Smile class="w-full h-full"/> </a>
                                             <div class="chat-dropdown dropdown-box absolute w-40 top-0 left-0 sm:left-auto sm:right-0 z-20">
                                                 <div class="dropdown-box__content">
                                                     <div class="chat-dropdown__box box flex flex-col pb-3 -mt-2">
                                                         <div class="px-3 pt-3">
                                                             <div class="relative text-gray-700">
                                                                 <input type="text" class="input w-full bg-gray-200 pr-10 placeholder-theme-13" placeholder="Search emojis..."/>
-                                                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0" data-feather="search"></i> 
+                                                                <i class="w-4 h-4 absolute my-auto inset-y-0 mr-3 right-0"/> 
                                                             </div>
                                                         </div>
                                                         <div class="chat-dropdown__box__tabs nav-tabs flex px-3 mt-5">
@@ -2035,11 +2036,11 @@ return (
                                             </div>
                                         </div>
                                         <div class="w-4 h-4 sm:w-5 sm:h-5 relative text-gray-500 mr-3 sm:mr-5">
-                                            <i data-feather="paperclip" class="w-full h-full"></i> 
+                                            <Paperclip class="w-full h-full"/> 
                                             <input type="file" class="w-full h-full top-0 left-0 absolute opacity-0"/>
                                         </div>
                                     </div>
-                                    <a href="javascript:;" class="w-8 h-8 sm:w-10 sm:h-10 block bg-theme-1 text-white rounded-full flex-none flex items-center justify-center mr-5"> <i data-feather="send" class="w-4 h-4"></i> </a>
+                                    <a href="javascript:;" class="w-8 h-8 sm:w-10 sm:h-10 block bg-theme-1 text-white rounded-full flex-none flex items-center justify-center mr-5"> <Send class="w-4 h-4"/> </a>
                                 </div>
                             </div>
                              {/* END: Chat Active */}
@@ -2064,3 +2065,5 @@ return (
              {/* END: Content */}
         </div>
 )}
+
+export default Chat;
