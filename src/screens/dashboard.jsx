@@ -111,7 +111,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div className="report-chart" >
-                        <Chart  height="160" class="mt-6"/>              
+                        <Chart class="mt-6"/>              
                 </div>
             </div>
         </div>

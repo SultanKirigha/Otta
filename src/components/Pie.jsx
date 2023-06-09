@@ -22,7 +22,7 @@ export default function App() {
   };
 
   return (
-    <div style={{ width: "100%", height: 300 }}>
+    <div style={{ width: "100%", height: 250 }}> {/* Adjust the height value here */}
       <ResponsiveContainer>
         <PieChart>
           <Pie

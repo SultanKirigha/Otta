@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { ResponsiveContainer, PieChart, Pie, Legend, Cell, Tooltip } from "recharts";
+import React, { useState } from "react";
+import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip } from "recharts";
 
 const data = [
   { name: "Yellow", value: 15 },
@@ -12,7 +12,6 @@ const HOVER_COLORS = ["#FF8B26", "#FFC533", "#285FD3"]; // Custom hover colors f
 
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [chartSize, setChartSize] = useState({ width: "100%", height: 300 });
 
   const handleMouseEnter = (_, index) => {
     setActiveIndex(index);
@@ -22,25 +21,9 @@ export default function App() {
     setActiveIndex(null);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth < 768) {
-        setChartSize({ width: "100%", height: 400 });
-      } else {
-        setChartSize({ width: "100%", height: 300 });
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div style={{ width: "100%" }}>
-      <ResponsiveContainer width={chartSize.width} height={chartSize.height}>
+    <div style={{ width: "100%", height: 250 }}>
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             dataKey="value"

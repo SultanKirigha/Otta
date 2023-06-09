@@ -6575,7 +6575,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   width: 1px;
   --bg-opacity: 1;
   background-color: #dee7ef;
-  background-color: rgba(222, 231, 239, var(--bg-opacity));
   position: absolute;
   margin-left: 1.25rem;
   margin-top: 1.25rem;
@@ -6587,7 +6586,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   height: 1px;
   --bg-opacity: 1;
   background-color: #dee7ef;
-  background-color: rgba(222, 231, 239, var(--bg-opacity));
+  /* background-color: rgba(222, 231, 239, var(--bg-opacity)); */
   position: absolute;
   margin-top: 1.25rem;
   margin-left: 1.25rem;
@@ -6617,7 +6616,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .report-chart:after {
   content: "";
   height: 93%;
-  /* background: linear-gradient(to right, transparent, #ffffffde, white); */
   width: 3rem;
   right: 0;
   top: 0;
