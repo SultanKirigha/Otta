@@ -3,6 +3,7 @@ import "../index.css"
 import { Calendar, CheckSquare, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, ChevronsRight, CreditCard, FileText, MapPin, Monitor, Plus, RefreshCcw, ShoppingCart, Trash2, User } from "react-feather/dist";
 import Chart from "../components/Charts";
 import Pie from "../components/Pie"
+import PiePadding from "../components/PiePaddingAgles"
   
 
 const Dashboard = () => {
@@ -157,7 +158,7 @@ const Dashboard = () => {
                 <a href="" className="ml-auto text-theme-1 truncate">See all</a>
             </div>
             <div className="intro-y box p-5 mt-5">
-                <canvas className="mt-3" id="report-donut-chart" height="280"></canvas>
+                <PiePadding className="mt-3" id="report-donut-chart" height="280"/>
                 <div className="mt-8">
                     <div className="flex items-center">
                         <div className="w-2 h-2 bg-theme-11 rounded-full mr-3"></div>
