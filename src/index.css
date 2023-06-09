@@ -6595,6 +6595,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .report-chart {
   position: relative;
+  margin-top: 50px;
 }
 
 .report-chart:before {

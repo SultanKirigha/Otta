@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css"
 import { Calendar, CheckSquare, ChevronDown, ChevronLeft, ChevronRight, ChevronUp, ChevronsRight, CreditCard, FileText, MapPin, Monitor, Plus, RefreshCcw, ShoppingCart, Trash2, User } from "react-feather/dist";
+import Chart from "../components/Charts";
+  
 
 const Dashboard = () => {
     return (
@@ -106,8 +108,8 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="report-chart">
-                    <canvas id="report-line-chart" height="160" className="mt-6"></canvas>
+                <div className="report-chart" >
+                        <Chart/>              
                 </div>
             </div>
         </div>
