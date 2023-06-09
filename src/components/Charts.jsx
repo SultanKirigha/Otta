@@ -19,11 +19,11 @@ const data = [
 const Chart = () => {
     return <LineChart width={500} height={380} data={data}>
         <Line type='monotone' dataKey='#-of-Votes' stroke="#3160D8" strokeWidth={2} tick={{ fontSize: 12 }}/>
-        <Line type='monotone' dataKey='#-of-Votes2' stroke="#BCBABA" strokeWidth={2} strokeDasharray="3 4 5 2" />
+        <Line type='monotone' dataKey='#-of-Votes2' stroke="#BCBABA" strokeWidth={2} strokeDasharray="5 5" />
         <XAxis dataKey="label" strokeOpacity={0} fill="#777777" style={{fontSize: 12}}/>
-        <YAxis strokeOpacity={0} fill="#777777" style={{fontSize:12}}/>
+        <YAxis strokeOpacity={0} fill="#777777" domain={[0, 1200]} ticks={[0, 200, 400, 600, 800, 1000, 1200]} style={{fontSize:12}}/>
         <Tooltip cursor={{ fill: "transparent" }}/>
-        <CartesianGrid strokeDasharray="2" stroke="#D8D8D8"  vertical={false} />    
+        <CartesianGrid strokeDasharray="3 3" stroke="#D8D8D8"  vertical={false} />    
         </LineChart>
 };
 

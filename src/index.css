@@ -6595,13 +6595,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 .report-chart {
   position: relative;
-  margin-top: 50px;
 }
 
 .report-chart:before {
   content: "";
   height: 93%;
-  background: linear-gradient(to right, white, #ffffffde, transparent);
+  /* background: linear-gradient(to right, white, #ffffffde, transparent); */
   width: 3rem;
   left: 0;
   top: 0;
@@ -6611,14 +6610,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 @media (max-width: 639px) {
   .report-chart:before {
-    height: 85%;
+    height: 70%;
   }
 }
 
 .report-chart:after {
   content: "";
   height: 93%;
-  background: linear-gradient(to right, transparent, #ffffffde, white);
+  /* background: linear-gradient(to right, transparent, #ffffffde, white); */
   width: 3rem;
   right: 0;
   top: 0;
@@ -18014,6 +18013,7 @@ video {
 
 .flex-col{
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .flex-col-reverse{
