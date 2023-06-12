@@ -1,6 +1,7 @@
 import React from "react";
 import { User, Activity, Book, Box, Briefcase, Calendar, Coffee, Edit, Eye, Facebook, FileText, Instagram, Layout, Linkedin, Mail, MoreHorizontal, Pocket, Share2, Sidebar, Trash2, Twitter, UserPlus, XCircle, X, Home, Users, Inbox, List, Send, MessageCircle, BarChart2 } from "react-feather";
- const PersonalProfile = () => {
+
+const PersonalProfile = () => {
 return (
     // BEGIN: Mobile Menu 
     <div className="mobile-menu md:hidden">

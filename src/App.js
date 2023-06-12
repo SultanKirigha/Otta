@@ -16,9 +16,6 @@ import ChangePassword from "./screens/changePassword";
 function App() {
   return (
     <div className="app" style={{ display: "flex" }}>
-      <Routes>
-        {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/"element={<>
               <Sidebar />
               <main className="content">
                 <Topbar />
@@ -33,10 +30,6 @@ function App() {
                   <Route path="/changePassword" element={<ChangePassword />} />
                 </Routes>
               </main>
-            </>
-          }
-        />
-      </Routes>
     </div>
   );
 }
