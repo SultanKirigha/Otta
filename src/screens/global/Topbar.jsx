@@ -201,13 +201,13 @@ const Topbar = () => {
                             <div className="text-xs text-theme-41">Software Engineer</div>
                         </div>
                         <div className="p-2">
-                            <a href="personal-profile.html" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <PersonOutlineOutlinedIcon classNameName="w-4 h-4 mr-2"/> Profile </a>
-                            <a href="" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <EditNoteOutlinedIcon classNameName="w-4 h-4 mr-2"/> Add Account </a>
-                            <a href="change-password.html" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <LockOutlinedIcon classNameName="w-4 h-4 mr-2"/> Reset Password </a>
-                            <a href="chat.html" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <HelpOutlineOutlinedIcon classNameName="w-4 h-4 mr-2"/> Help </a>
+                            <a href="/personalProfile" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <PersonOutlineOutlinedIcon classNameName="w-4 h-4 mr-2"/> Profile </a>
+                            <a href="/" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <EditNoteOutlinedIcon classNameName="w-4 h-4 mr-2"/> Add Account </a>
+                            <a href="/changePassword" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <LockOutlinedIcon classNameName="w-4 h-4 mr-2"/> Reset Password </a>
+                            <a href="/chat" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <HelpOutlineOutlinedIcon classNameName="w-4 h-4 mr-2"/> Help </a>
                         </div>
                         <div className="p-2 border-t border-theme-40">
-                            <a href="login-login.html" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <ToggleOnOutlinedIcon classNameName="w-4 h-4 mr-2"/> Logout </a>
+                            <a href="/login" className="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 rounded-md"> <ToggleOnOutlinedIcon classNameName="w-4 h-4 mr-2"/> Logout </a>
                         </div>
                     </div>
                 </div>

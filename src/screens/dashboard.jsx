@@ -4,6 +4,7 @@ import { Calendar, CheckSquare, ChevronDown, ChevronLeft, ChevronRight, ChevronU
 import Chart from "../components/Charts";
 import Pie from "../components/Pie"
 import PiePadding from "../components/PiePaddingAgles"
+import PiePaddingSmall from "../components/PiePaddingSmall"
   
 
 const Dashboard = () => {
@@ -269,7 +270,7 @@ const Dashboard = () => {
                             <div className="text-gray-600 mt-1">300 Sales</div>
                         </div>
                         <div className="flex-none ml-auto relative">
-                            <canvas id="report-donut-chart-1" width="90" height="90"></canvas>
+                            <PiePaddingSmall id="report-donut-chart-1"/>
                             <div className="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0">20%</div>
                         </div>
                     </div>
