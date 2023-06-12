@@ -5,6 +5,7 @@ import Chart from "../components/Charts";
 import Pie from "../components/Pie"
 import PiePadding from "../components/PiePaddingAgles"
 import PiePaddingSmall from "../components/PiePaddingSmall"
+import PiePaddingSmall2 from "../components/PiePaddingSmall2"
   
 
 const Dashboard = () => {
@@ -283,7 +284,7 @@ const Dashboard = () => {
                         <div className="py-1 px-2 rounded-full text-xs bg-gray-200 text-gray-600 cursor-pointer ml-auto truncate">320 Followers</div>
                     </div>
                     <div className="mt-4">
-                        <canvas className="simple-line-chart-1 -ml-1" height="60"></canvas>
+                        <canva className="simple-line-chart-1 -ml-1"/>
                     </div>
                 </div>
             </div>
@@ -295,7 +296,7 @@ const Dashboard = () => {
                             <div className="text-gray-600 mt-1">1450 Products</div>
                         </div>
                         <div className="flex-none ml-auto relative">
-                            <canvas id="report-donut-chart-2" width="90" height="90"></canvas>
+                            <PiePaddingSmall2 id="report-donut-chart-2" />
                             <div className="font-medium absolute w-full h-full flex items-center justify-center top-0 left-0">45%</div>
                         </div>
                     </div>
