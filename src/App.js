@@ -11,6 +11,7 @@ import ViewTalent from "./screens/viewTalent";
 import DataList from "./screens/dataList";
 import Chat from "./screens/chat";
 import ChangePassword from "./screens/changePassword";
+// import Jobs from "./screens/job"
 // import Login from "./screens/login";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                   <Route path="/dataList" element={<DataList />} />
                   <Route path="/chat" element={<Chat />} />
                   <Route path="/changePassword" element={<ChangePassword />} />
+                  {/* <Route path="/job" element={<Jobs/>} /> */}
                 </Routes>
               </main>
     </div>

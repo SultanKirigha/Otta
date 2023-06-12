@@ -6,6 +6,7 @@ import Pie from "../components/Pie"
 import PiePadding from "../components/PiePaddingAgles"
 import PiePaddingSmall from "../components/PiePaddingSmall"
 import PiePaddingSmall2 from "../components/PiePaddingSmall2"
+import Line from "../components/line"
   
 
 const Dashboard = () => {
@@ -284,7 +285,7 @@ const Dashboard = () => {
                         <div className="py-1 px-2 rounded-full text-xs bg-gray-200 text-gray-600 cursor-pointer ml-auto truncate">320 Followers</div>
                     </div>
                     <div className="mt-4">
-                        <canva className="simple-line-chart-1 -ml-1"/>
+                        <Line className="simple-line-chart-1 -ml-1"/>
                     </div>
                 </div>
             </div>

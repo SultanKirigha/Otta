@@ -23,7 +23,7 @@ export default function App() {
 
   return (
     <div style={{ width: "100%", height: 250 }}> {/* Adjust the height value here */}
-      <ResponsiveContainer>
+      <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             dataKey="value"
@@ -37,7 +37,7 @@ export default function App() {
                 key={`cell-${index}`}
                 fill={COLORS[index % COLORS.length]}
                 stroke={activeIndex === index ? HOVER_COLORS[index % HOVER_COLORS.length] : "none"}
-                strokeWidth={activeIndex === index ? 5 : 1}
+                strokeWidth={activeIndex === index ? 8 : 1}
               />
             ))}
           </Pie>
